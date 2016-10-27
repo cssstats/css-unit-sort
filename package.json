@@ -11,7 +11,14 @@
     "test": "ava -v"
   },
   "repository": "cssstats/css-unit-sort",
-  "keywords": [],
+  "keywords": [
+    "sort",
+    "css",
+    "unit",
+    "px",
+    "rem",
+    "em"
+  ],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
