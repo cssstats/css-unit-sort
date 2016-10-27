@@ -1,0 +1,20 @@
+{
+  "name": "css-unit-sort",
+  "description": "Sort css values no matter the unit",
+  "author": "John Otander",
+  "version": "0.1.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "ava -v"
+  },
+  "repository": "cssstats/css-unit-sort",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "*"
+  }
+}
