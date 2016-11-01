@@ -2,7 +2,7 @@
 
 // Originally written by @jxnblk
 // https://github.com/cssstats/cssstats/blob/16fe37c96623fd3cdb24bd302ef6f6e93826af0f/controllers/stats.js#L98
-module.exports = units => units.sort(sortFn)
+const cssUnitSort = units => units.sort(sortFn)
 
 const sortFn = (a, b) => {
 	const aa = convert(a)
@@ -13,13 +13,11 @@ const sortFn = (a, b) => {
 }
 
 const convert = value => {
-	let raw
-
 	if (typeof value !== 'string') {
 		value = value.toString()
 	}
 
-	raw = parseFloat(value, 10)
+	const raw = parseFloat(value, 10)
 
 	if (value.match(/px$/)) return raw
 	if (value.match(/pt$/)) return raw
@@ -51,3 +49,7 @@ const convert = value => {
 			return 1024
 	}
 }
+
+module.exports = cssUnitSort
+module.exports.sortFn = sortFn
+module.exports.convert = convert
