@@ -19,6 +19,7 @@ const convert = value => {
 
 	const raw = parseFloat(value, 10)
 
+	if (value == 0) return 0
 	if (value.match(/px$/)) return raw
 	if (value.match(/pt$/)) return raw
 	if (value.match(/em$/)) return raw * 16
